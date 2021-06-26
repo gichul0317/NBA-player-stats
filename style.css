@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-size: 1rem;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+#backVideo {
+  position: fixed;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #225470;
+  z-index: -1;
+  opacity: 0.6;
+}
+.main-content {
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+  margin: 0 5rem;
+}
+.main-content h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.main-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-content form label {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.main-content form input {
+  font-size: 24px;
+  border: hidden;
+  border-radius: 5px;
+  width: 25%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.main-content form button {
+  font-size: 24px;
+  border: hidden;
+  border-radius: 5px;
+  width: 25%;
+  text-align: center;
+}
+.main-content form button:hover,
+.main-content form button:active {
+  cursor: pointer;
+  color: #225470;
+}
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.content-container h2 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.content-container p {
+  font-size: 1.2rem;
+}
+.playerImage {
+  min-width: 30%;
+  min-height: auto;
+  margin-right: 50px;
+}
+footer {
+  position: sticky;
+  margin-top: 200px;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer a:hover,
+footer a:active {
+  color: #225470;
+}
+@media (min-width: 450px) and (max-width: 1060px) {
+  .main-content h1 {
+    font-size: 2.5rem;
+  }
+  .main-content form label {
+    font-size: 1.5rem;
+  }
+  .main-content form input {
+    font-size: 18px;
+    width: 40%;
+  }
+  .main-content form button {
+    font-size: 18px;
+    width: 40%;
+  }
+  .content-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-container h2 {
+    font-size: 1.5rem;
+  }
+  .content-container p {
+    font-size: 1rem;
+  }
+  .playerImage {
+    margin-right: 0;
+  }
+}
+@media (max-width: 449px) {
+  .main-content h1 {
+    font-size: 2rem;
+  }
+  .main-content form label {
+    font-size: 1.2rem;
+  }
+  .main-content form input {
+    font-size: 14px;
+    width: 80%;
+  }
+  .main-content form button {
+    font-size: 14px;
+    width: 80%;
+  }
+  .content-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-container h2 {
+    font-size: 1.2rem;
+  }
+  .content-container p {
+    font-size: 1rem;
+  }
+  .playerImage {
+    margin-right: 0;
+  }
+}
